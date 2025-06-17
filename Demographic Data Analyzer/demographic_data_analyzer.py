@@ -4,7 +4,7 @@ import pandas as pd
 def calculate_demographic_data(print_data=True):
     # Read data from file
 
-    df = pd.read_csv('adult.data.csv', sep=",")
+    df = pd.read_csv('adult.data.csv')
     print(df)
 
     # How many of each race are represented in this dataset? This should be a Pandas series with race names as the index labels.
@@ -78,8 +78,7 @@ def calculate_demographic_data(print_data=True):
         'min_work_hours': min_work_hours,
         'rich_percentage': rich_percentage,
         'highest_earning_country': highest_earning_country,
-        'highest_earning_country_percentage':
-        highest_earning_country_percentage,
+        'highest_earning_country_percentage': highest_earning_country_percentage,
         'top_IN_occupation': top_IN_occupation
     }
 

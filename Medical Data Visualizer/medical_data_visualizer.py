@@ -5,7 +5,6 @@ import numpy as np
 
 # 1
 df = pd.read_csv('medical_examination.csv')
-# print(df)
 
 # 2
 BMI = (df['weight'] / ((df['height']/100) ** 2))
@@ -37,6 +36,7 @@ def draw_cat_plot():
     fig.savefig('catplot.png')
     return fig
 
+draw_cat_plot()
 
 # 10
 def draw_heat_map():
